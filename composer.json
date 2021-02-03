@@ -1,0 +1,40 @@
+{
+    "name": "validationapp/ask",
+    "type": "project",
+    "description": "validation.app PHP SDK",
+    "keywords": [
+        "email",
+        "validation",
+        "validation.app",
+        "sdk",
+        "php"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Validationapp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Validationapp\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

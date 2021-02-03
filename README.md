@@ -1,1 +1,1 @@
-## Phinch - Finch API PHP SDK
+## Validation.app PHP SDK

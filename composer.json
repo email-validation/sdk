@@ -1,5 +1,5 @@
 {
-    "name": "validationapp/ask",
+    "name": "validationapp/sdk",
     "type": "project",
     "description": "validation.app PHP SDK",
     "keywords": [

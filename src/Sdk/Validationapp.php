@@ -19,6 +19,12 @@ class Validationapp
         $this->client = $client;
     }
 
+    /**
+     * @param $email
+     * @param null $ip_address
+     * @return array
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function validate($email, $ip_address = null): array
     {
         return $this->client->post('validate', [
@@ -27,6 +33,11 @@ class Validationapp
         ]);
     }
 
+    /**
+     * @param array $emails
+     * @return array
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function batch(array $emails): array
     {
         return $this->client->post('batch', [
@@ -34,11 +45,22 @@ class Validationapp
         ]);
     }
 
+    /**
+     * @param $uuid
+     * @return array
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function checkBatch($uuid): array
     {
         return $this->client->get("batch/{$uuid}");
     }
 
+    /**
+     * @param $email
+     * @param int $limit
+     * @return array
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function suggest($email, $limit = 5): array
     {
         return $this->client->get('suggest', [

@@ -1,7 +1,18 @@
 {
-    "name": "validationapp/sdk",
+    "name": "validationapp/validationapp-sdk",
     "type": "project",
     "description": "validation.app PHP SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Campbell",
+            "email": "adam@hotmeteor.com"
+        },
+        {
+            "name": "Yaz Jallad",
+            "email": "yazjallad@gmail.com"
+        }
+    ],
     "keywords": [
         "email",
         "validation",
@@ -9,7 +20,6 @@
         "sdk",
         "php"
     ],
-    "license": "MIT",
     "require": {
         "php": "^7.4|^8.0",
         "ext-json": "*",
